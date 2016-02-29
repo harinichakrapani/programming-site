@@ -1,0 +1,68 @@
+
+
+/* website: programming-site 
+Author: Harini Chakrapani;
+*/
+body{
+background: orange	; 
+font-family: arial; 
+}
+
+
+
+h1 {font-family: 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px; 
+	text-transform: uppercase;
+	margin:auto auto; 
+	padding:25px;
+}
+h1:hover { color: green;
+
+
+
+}
+p {
+	font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	text-decoration: underline; 
+	text-align: center;
+
+}
+
+p:first-line{ color: blue;  
+
+
+}
+
+#content{ 
+		width:600px;
+		border-width: 2px; 
+		border-color:#0000;
+		border-style: solid; 
+		background-color: gray; 
+		margin:0 auto;
+		margin-top: 0; 
+		margin-bottom: 0; 
+		margin-right: auto; 
+		margin-left: auto; 
+		padding: 20px;
+		border-radius:100%;
+		overflow: hidden; 
+
+} 
+
+
+}
+
+hr{ border-color: #0000FF; 
+
+}
+/*CSS*/ 
