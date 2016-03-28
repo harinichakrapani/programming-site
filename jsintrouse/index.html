@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+  <style> 
+#container 
+{ font-size: 45px; 
+	font-style: arial; 
+
+
+  } 
+
+  </style>
+
+</head>
+<body>
+  <div id="container"></div>
+</body>
+
+
+
+<script type="text/javascript">
+	
+//My first Javascript
+//document.write('Hello world!');  
+// document.createElement('p'); 
+// var bodytext=document.createElement('p'); 
+// console.log(bodytext); 
+// document.createTextNode('Hello World'); 
+// var hello= document.createTextNode('Hello World'); 
+// console.log(hello); 
+
+// //append text to paragraph element
+// bodytext.appendChild(hello); 
+
+// var c= document.getElementById("container"); 
+
+// console.log(c); 
+// c.appendChild(bodytext); 
+
+// function syntax 
+//var myFunc=function(text){
+//console.log("My First Function"); 
+
+//} 
+myFunc("My First Function"); 
+
+myFunc(2+2);
+ 
+function myFunc(param)
+{ 
+	console.log(param); 
+
+var container=document.getElementById('container'); 
+console.log(container); 
+var sub=document.createElement('h3'); 
+var name=document.createTextNode('Hello'+ param); 
+sub.appendChild(name); 
+container.appendChild(sub); 
+
+} 
+myFunc("Harini"); 
+myFunc("Kenpachi"); 
+myFunc("Sakura"); 
+myFunc("Kakashi"); 
+
+function welcome(name){
+
+alert("Hello " + name); 
+myFunc(name); 
+
+}
+welcome ('Harini'); 
+welcome ('Kenpachi'); 
+welcome ('Sakura'); 
+welcome ('Kakashi'); 
+//welcome('Harini'); 
+//myFunc("Harini"); 
+
+
+//welcome("Kenpachi"); 
+//myFunc("Kenpachi"); 
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My First App - Tip Calculator</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+	<h1 id="headline">Tip Calculator</h1>
+	
+	<div class="app-wrapper">
+
+	  <section id="total">
+		<span>Total bill amount :</span>
+		$ <input type="text" id="bill" class="amount-field">
+	  </section>
+
+	  <section id="percentage">
+	  	<span>Choose Tip Percentage:</span>
+	  	<div class="tip-vals">
+		  <span class="val">
+		  	<input type="radio" class="tip-btn" value=".15"> 15%
+		  </span>
+		  <span class="val">
+		  	<input type="radio" class="tip-btn" value=".2"> 20%
+		  </span>
+		  <span class="val">
+		  	<input type="radio" class="tip-btn" value=".25"> 25%
+		  </span>
+		</div>
+	  </section>
+	  
+	  <section id="calc">
+	  	<button id="submit">Submit</button>
+	  </section>
+
+	  <section id="tip">
+	  	<h3>Tip to leave = 
+		  <span id="tipamount" class="tip-amount">$0.00</span>
+		
+		</h3> 
+	  </section>
+                                          
+	</div>
+ 
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
