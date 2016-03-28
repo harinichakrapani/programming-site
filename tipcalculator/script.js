@@ -3,6 +3,9 @@
 // run this function
 
 var submit= document.getElementById('submit'); 
+var reset=document.getElementById('reset'); 
+reset.onclick=resetCalculator; 
+
 submit.onclick= tipCalculate; 
 
 function tipCalculate(){
@@ -27,6 +30,7 @@ function tipCalculate(){
 		tipBox.innerHTML= '$'+ roundedAmount; 
 	}  else{ 
 		alert('Please enter numbers only')
+		resetCalculator(); 
 	}
 }
 
@@ -49,11 +53,24 @@ if(percBtns[i].checked==true) {
 	}
 
 }
- $('reset').click(function(){
-            $('#tipform')[0].reset();
- });
+ // $('reset').click(function(){
+ //            $('#tipform')[0].reset();
+ // });
 
+function resetCalculator() { 
 
+document.getElementById('bill').value = '';
+
+var percBtns = document.getElementsByClassName('tip-btn');
+  for(var i=0; i < percBtns.length; i++){
+    percBtns[i].checked = false;
+  }
+
+ var tipBox = document.getElementById('tipamount');
+  tipBox.innerHTML = '$0.00';
+}
+
+//when the calculator has alpha numeric values and you need to clear the boxes
 
 
 
